@@ -313,3 +313,17 @@ and print its reverse. (Example: 123 → 321). */
 const reversed = user_input.split("").reverse().join("");
 
 console.log(Number(reversed)); */
+
+// -------- Question - 16 🎀💎🎯
+
+/* Sum of Digits – Take a number from the user and print the sum
+of its digits. (Example: 123 → 1+2+3 = 6). */
+
+/* let num = prompt("Enter numbers here");
+let sum = 0;
+
+for (let i = 0; i < num.length; i++) {
+  sum = sum + Number(num[i]);
+}
+
+console.log("The sum is " + sum); */
