@@ -264,3 +264,52 @@ if (userinfo === username && userpass === password) {
 } else {
   alert("Incorrect username or password");
 } */
+
+// -------- Question - 13 🎀💎🎯
+
+/* Swapping Without Third Variable – Take two numbers from the
+user and swap their values without using a third variable. */
+
+// Solution 👇
+
+/* let a = 6;
+let b = 9;
+
+a = a^b;
+b = a^b;
+a = a^b;
+
+console.log(a,b); */
+
+// -------- Question - 14 🎀💎🎯
+
+/* FizzBuzz (Multiple of Both) – Ask the user for a number. If it's a
+multiple of both 3 and 5, print “FizzBuzz”; if only 3, print “Fizz”; if
+only 5, print “Buzz”; otherwise, print the number itself. */
+
+// Solution 👇
+
+/* const user_input = Number(prompt("Enter a number here"));
+
+if (user_input % 3 === 0 && user_input % 5 === 0) {
+  console.log("FizzBuzz");
+} else if (user_input % 3 === 0) {
+  console.log("Fizz");
+} else if (user_input % 5 === 0) {
+  console.log("Buzz");
+} else {
+  console.log(user_input);
+} */
+
+// -------- Question - 15 🎀💎🎯
+
+/* Number Reversal – Take a three-digit number from the user
+and print its reverse. (Example: 123 → 321). */
+
+// Solution 👇
+
+/* const user_input = prompt("Enter a number here");
+
+const reversed = user_input.split("").reverse().join("");
+
+console.log(Number(reversed)); */
