@@ -319,11 +319,64 @@ console.log(Number(reversed)); */
 /* Sum of Digits – Take a number from the user and print the sum
 of its digits. (Example: 123 → 1+2+3 = 6). */
 
+// Solution 👇
+
 /* let num = prompt("Enter numbers here");
 let sum = 0;
 
 for (let i = 0; i < num.length; i++) {
   sum = sum + Number(num[i]);
+  }
+  
+  console.log("The sum is " + sum); */
+
+// -------- Question - 17 🎀💎🎯
+
+/* Palindrome Checker – Ask the user for a word. Check if it
+reads the same forward and backward. Print “Palindrome” or
+“Not a Palindrome.” */
+
+// Solution 👇
+
+/* let word = prompt("Enter a word here");
+
+if (word === word.split("").reverse().join("")) {
+  console.log("Palindrome");
+} else {
+  console.log("Not a Palindrome.");
+} */
+
+// -------- Question - 18 🎀💎🎯
+
+/* Reverse Without String Methods – Ask the user for a number
+and reverse it without using .split(), .reverse(), or .join(). */
+
+// Solution 👇
+
+/* let num = prompt("Enter numbers here");
+let reverser = "";
+
+for (let i = num.length - 1; i >= 0; i--) {
+  reverser += num[i];
 }
 
-console.log("The sum is " + sum); */
+console.log(Number(reverser)); */
+
+// -------- Question - 19 🎀💎🎯
+
+/* Find Second Largest – Take three numbers as input and find
+the second largest number (without using sort() or Math.max()). */
+
+// Solution 👇
+
+/* let num1 = Number(prompt("Enter first number"));
+let num2 = Number(prompt("Enter second number"));
+let num3 = Number(prompt("Enter third number"));
+
+if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {
+  console.log(num1 + " is the Second largest number");
+} else if ((num2 > num1 && num2 < num3) || (num2 < num1 && num2 > num3)) {
+  console.log(num2 + " is the Second largest number");
+} else {
+  console.log(num3 + " is the Second largest number");
+} */
