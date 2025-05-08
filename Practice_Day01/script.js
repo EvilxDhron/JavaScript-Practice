@@ -381,5 +381,53 @@ if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {
   console.log(num3 + " is the Second largest number");
 } */
 
+// -------- Question - 20 🎀💎🎯
 
-  // testing form second system
+/* Find First Non-Repeating Character – Ask the user for a word
+and find the first character that does not repeat. Example: hello
+→ h (since e, l, and o repeat). */
+
+// Solution 👇
+
+/* let word = prompt("Enter the word here:");
+let checker = {};
+
+for(let letter of word){
+  if(checker[letter]){
+    checker[letter]++
+  }else{
+    checker[letter] = 1;
+  }
+}
+
+for(let letter of word){
+  if(checker[letter] === 1){
+    alert("This is the first non-repeating letter = " + letter);
+    console.log(letter);
+    break;
+  }else{
+    console.log(checker[letter]);
+  }
+} */
+
+// -------- Question - 21 🎀💎🎯
+
+/* Even Digit Counter – Take a number from the user and count
+how many even digits it has. */
+
+// Solution 👇
+
+/* let num = prompt("Enter the number here:").split('');
+let evennum = 0;
+
+for(let counter of num){
+  if(counter % 2 == 0){
+    console.log("It's a even number.");
+    console.log(Number(counter));
+    evennum++;
+  }else{
+    console.log("It's a odd number.");
+  }
+}
+
+console.log(evennum); */
