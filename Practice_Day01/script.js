@@ -431,3 +431,93 @@ for(let counter of num){
 }
 
 console.log(evennum); */
+
+// -------- Question - 22 🎀💎🎯
+
+/* Nested Condition Challenge – Ask the user for their age and
+salary. Print a message based on conditions:
+
+ If age is below 18, print “Not eligible”
+
+ If age is 18 or more but salary is less than ₹20,000, print “Low
+ Salary”
+
+ If salary is ₹50,000 or more, print “High Salary”
+
+ . Otherwise, print “Medium Salary” */
+
+// Solution 👇
+
+/* let age = prompt("Enter your age");
+let salary = 0;
+
+if (age < 18) {
+  alert("Not Eligible");
+} else {
+  salary = prompt("Enter your Salary");
+  if (age >= 18 && salary < 20000) {
+    console.log("Low Salary");
+  } else if (age >= 18 && salary >= 50000) {
+    console.log("High Salary");
+  } else {
+    console.log("Medium Salary");
+  }
+} */
+
+// -------- Question - 23 🎀💎🎯
+
+/* Toggle Case – Ask the user for a word and toggle the case of
+every character. Example: HeLLo → hEllO. */
+
+// Solution 👇
+
+/* let word = prompt("Enter the word here");
+let toggled = "";
+
+for (let char of word) {
+  if (char === char.toLowerCase()) {
+    toggled += char.toUpperCase();
+  } else {
+    toggled += char.toLowerCase();
+  }
+}
+
+console.log(toggled); */
+
+// -------- Question - 24 🎀💎🎯
+
+/* Find the Missing Number in a Sequence – Take a list of
+consecutive numbers (except one missing) and find the
+missing number. Example: 1, 2, 3, 5 → Missing number is 4. */
+
+// Solution 👇
+
+/* let input = prompt("Enter the numbers list in Sequence");
+let list = input.split(",").map(Number);
+
+for (let i = 0; i < list.length - 1; i++) {
+  if (list[i + 1] !== list[i] + 1) {
+    console.log("The missing number is " + (list[i] + 1));
+    break;
+  } else {
+    console.log(list[i]);
+  }
+} */
+
+// -------- Question - 25 🎀💎🎯
+
+/* Convert Number to Words – Take a single-digit number and
+print it in words (Example: 1 → One, 2 → Two). */
+
+// Solution 👇
+
+/* let num = Number(prompt("Enter any digit form 0 to 9"));
+let list = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+
+if(num >= 0 && num <=9){
+  console.log(list[num])
+}else{
+  alert("Please enter a digit from 0 to 9");
+} */
+
+// Practice Questions Completed 😊😊
