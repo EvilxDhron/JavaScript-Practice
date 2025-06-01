@@ -12,3 +12,5 @@ const listitems = () => {
         console.log(`${item.Product} :- ${item.Quantity} Total-Price :- ${item.Price*item.Quantity}`);
     }
 }
+
+const addtoCart = (Name, Quantity, Price) => Cart.push({Product: Name, Quantity: Quantity, Price: Price});
