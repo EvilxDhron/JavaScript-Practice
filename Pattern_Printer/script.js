@@ -24,3 +24,12 @@ for(let i = height - 1; i >=1; i--){
     }
     console.log(row)
 };
+
+let nums = [3,7,2,9,4];
+let sum = null;
+
+for(let num of nums){
+    sum += num;
+}
+
+console.log(sum);
