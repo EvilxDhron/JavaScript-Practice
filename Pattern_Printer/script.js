@@ -47,3 +47,19 @@ let reverse = () => {
 }
 
 console.log(reverse());
+
+let arr2D = [
+    [2,3,4],
+    [5,6,7],
+    [8,9,0]
+];
+
+let arrsum = 0;
+
+for(let row of arr2D){
+    for(let digit of row){
+        arrsum += digit;
+    }
+}
+
+console.log(arrsum);
