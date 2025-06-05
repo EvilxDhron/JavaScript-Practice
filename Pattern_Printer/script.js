@@ -33,3 +33,17 @@ for(let num of nums){
 }
 
 console.log(sum);
+
+
+let str = "Hello! World";
+
+
+let reverse = () => {
+    let reversed = "";
+    for(let st = str.length - 1; st >= 0; st--){
+        reversed += str[st];
+    }
+    return reversed;
+}
+
+console.log(reverse());
