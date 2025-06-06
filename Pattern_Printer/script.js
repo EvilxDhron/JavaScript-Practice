@@ -25,6 +25,8 @@ for(let i = height - 1; i >=1; i--){
     console.log(row)
 };
 
+// Printing sum of an array
+
 let nums = [3,7,2,9,4];
 let sum = null;
 
@@ -35,8 +37,9 @@ for(let num of nums){
 console.log(sum);
 
 
-let str = "Hello! World";
+// Reversing a string
 
+let str = "Hello! World";
 
 let reverse = () => {
     let reversed = "";
@@ -47,6 +50,9 @@ let reverse = () => {
 }
 
 console.log(reverse());
+
+
+// 2D array sum
 
 let arr2D = [
     [2,3,4],
@@ -63,3 +69,15 @@ for(let row of arr2D){
 }
 
 console.log(arrsum);
+
+// Making a copy of Map function
+
+const mapcopy = [2,3,4,5,6];
+
+console.log(mapcopy.map((num) => num + 2));
+
+let mapCopy = (arr, fn) => {
+    for(let num of arr){
+        
+    }
+}
