@@ -73,3 +73,58 @@ let subject = "JavaScript";
 for (let char of subject) {
   console.log(char);
 }
+
+/* --Q.6 Removing Duplicate Values from an Array
+Problem: Remove duplicate values from an array. */
+
+/* --Solution 👇 */
+
+let arr = [1, 2, 3, 3, 2, 2, 1, 1, 4, 5, 5, 4];
+let uniquearr = [...new Set(arr)];
+
+/* --Q.7 finding the Second Largest Number in an Array
+Problem: Find the second largest number in an array. */
+
+/* --Solution 👇 */
+
+let arr2 = [34, 634, 123, 45, 234, 423, 43, 23, 213, 23, 23, 34, 634];
+
+console.log([...new Set(arr2)].sort((a, b) => b - a)[1]);
+
+/* --Q.8 Sorting an Array in Descending Order
+Problem: Sort an array in descending order. */
+
+/* --Solution 👇 */
+
+let arr3 = [4, 2, 1, 3, 6, 4, 4, 3, 3, 2, 1];
+console.log(arr3.sort((a, b) => b - a));
+
+/* --Q.9 Reversing an Array Without reverse()
+Problem: Reverse an array without using .reverse(). */
+
+/* --Solution 👇 */
+
+let arr4 = [4, 5, 6, 7, 8, 9];
+let reversed = [];
+for (let i = arr4.length - 1; i >= 0; i--) {
+  reversed.push(arr4[i]);
+}
+console.log(reversed);
+
+/* --Q.10 Finding the Most Frequent Element in an Array
+Problem: Find the most frequent element in an array. */
+
+/* --Solution 👇 */
+
+let arr5 = [1, 4, 6, 5, 9, 3, 2, 1, 7, 7, 1, 1, 3, 2];
+let frequency = {};
+
+for (let num of arr5) {
+  frequency[num] = (frequency[num] || 0) + 1;
+}
+
+let mostfrequent = Object.keys(frequency).reduce((a, b) =>
+  frequency[a] > frequency[b] ? a : b
+);
+
+console.log(mostfrequent);
