@@ -48,6 +48,21 @@ for (let i = 1; i <= 10; i++) {
   console.log(star);
 }
 
+// Advance Pattern
+
+let row = 6;
+
+for (let i = 1; i <= row; i++) {
+  let star = "";
+  for (let j = 1; j <= row - i; j++) {
+    star += " ";
+  }
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    star += "*";
+  }
+  console.log(star);
+}
+
 /* --Q.5 Iterating Over a String (for...of loop)
 Problem: Use a for...of loop to iterate over the string "JavaScript". */
 
