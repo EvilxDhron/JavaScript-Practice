@@ -72,14 +72,18 @@ console.log(arrsum);
 
 const mapcopy = [2, 3, 4, 5, 6];
 
+console.log("This is the real map 👇");
 console.log(mapcopy.map((num) => num + 2));
 
 let mapCopy = (arr, fn) => {
   let newarr = [];
   for (let num of arr) {
-    newarr = fn(arr[num]);
+    newarr.push(fn(num));
   }
   return newarr;
 };
 
+console.log("This is the original array 👇");
+console.log(mapcopy);
+console.log("This is the new copy 👇");
 console.log(mapCopy(mapcopy, (val) => val + 2));
