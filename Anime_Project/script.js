@@ -34,7 +34,7 @@ btn.addEventListener("click", () => {
   let anime_index = Math.floor(Math.random() * anime.length);
   let img = document.createElement("img");
   img.setAttribute("src", anime[anime_index]);
-  img.style.height = "200px";
+  img.style.height = "250px";
   img.style.position = "absolute";
   img.style.left = x + "%";
   img.style.top = y + "%";
