@@ -29,15 +29,15 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
   let x = Math.random() * 90;
-  let y = Math.random() * 82;
-  let rotate = Math.random() * 360;
+  let y = Math.random() * 76;
+  // let rotate = Math.random() * 360;
   let anime_index = Math.floor(Math.random() * anime.length);
   let img = document.createElement("img");
   img.setAttribute("src", anime[anime_index]);
-  img.style.height = "250px";
+  img.style.height = "280px";
   img.style.position = "absolute";
   img.style.left = x + "%";
   img.style.top = y + "%";
-  img.style.rotate = rotate + "deg";
+  // img.style.rotate = rotate + "deg";
   body.appendChild(img);
 });
