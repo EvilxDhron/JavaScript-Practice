@@ -9,11 +9,27 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .instalike{
+            transform: scale(0.5);
+        }
+    </style>
   </head>
   <body
     class="min-h-screen w-full h-full flex justify-center items-center bg-gray-700"
   >
-    <div class="card w-[360px] flex justify-center flex-col">
+    <div class="card w-[360px] aspect-3/2 flex justify-center flex-col">
       <div
         class="card-top w-full bg-black flex justify-between items-center px-2"
       >
@@ -31,7 +47,7 @@
       </div>
       <div class="card-pt1 w-full">
         <img
-          class="w-full h-full object-cover"
+          class="instapost w-full h-full object-cover"
           src="./assets/instaPost.jpg"
           alt=""
         />
@@ -50,9 +66,8 @@
           </div>
         </div>
         <div class="detail text-white px-2 text-xs">
-          offcial_dhron Always believe in yourself... 
-           <br>...more
-           <br>Add a comment...
+          offcial_dhron Always believe in yourself...
+          <br />...more <br />Add a comment...
         </div>
       </div>
     </div>
