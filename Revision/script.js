@@ -769,4 +769,61 @@ console.log(introducer({ name: "Luke", age: 21, hobbies: ["Chess", "Reading"] })
   }, 1500);
 }); */
 
+/* Q.52 Create a function that takes a callback and executes it after every "n" seconds indefinitely. */
+
+/* let merachutiyasafnc = (fn, time)=>{
+  setInterval(fn, time);
+}
+
+merachutiyasafnc(()=>{
+  console.log("mera lelo free me!")
+}, 3000); */
+
+// Q.53 Implement a function that returns a function with a preset greeting (Closure).
+
+/* function greeter(greeting_style){
+  return function (name){
+    console.log(`${greeting_style} ${name} \nkaise hai aap \naashaa karta hu acche hi honge.`);
+  }
+}
+
+let greetkaro = greeter("Namaste!");
+greetkaro("Dhron Yadav."); */
+
+/* Q.54 Implement a function that takes a callback and only executes it once (HOF + Closure). */
+
+/* function merafnc(clb) {
+  let executer = false;
+  return () => {
+    if (!executer) {
+      clb();
+    }
+  };
+}
+
+let oncecaller = merafnc(() => {
+  console.log("Exectue hua bas ek baar.");
+});
+
+oncecaller(); */
+
+// Q.55 Implement a function that throttles another function (HOF + Clousures).
+
+/* let throttler = (fnc, time) => {
+  let lastcalled = 0;
+  return () => {
+    let current = Date.now();
+    if (current - lastcalled > time) {
+      fnc();
+      lastcalled = current;
+    }
+  };
+};
+
+let myfnc = throttler(() => {
+  console.log("Ek baar me call hua.");
+}, 5000);
+
+myfnc(); */
+
 
